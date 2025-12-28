@@ -14,6 +14,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"google.golang.org/grpc"
 
+	notificationpb "github.com/jiangqiao2/go-video-proto/proto/notification/notification"
 	notificationgrpc "notification-service/ddd/adapter/grpc"
 	_ "notification-service/ddd/adapter/http"
 	"notification-service/ddd/application/app"
@@ -25,7 +26,6 @@ import (
 	"notification-service/pkg/redisclient"
 	"notification-service/pkg/repository"
 	"notification-service/pkg/sse"
-	notificationpb "github.com/jiangqiao2/go-video-proto/proto/notification/notification"
 )
 
 // Run is the entrypoint of notification-service.
